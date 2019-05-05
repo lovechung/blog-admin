@@ -5,7 +5,7 @@ import store from './store'
 import * as filters from './filters'
 import './components'
 import Buefy from 'buefy'
-import 'buefy/lib/buefy.css'
+import 'buefy/dist/buefy.css'
 
 Vue.use(Buefy, {defaultIconPack: 'fa'});
 

@@ -2,7 +2,7 @@ import request from '../utils/request'
 
 export function login(uname, pwd) {
     return request({
-        url: '/admin/login',
+        url: '/login',
         method: 'get',
         params: {
             uname,
@@ -13,7 +13,7 @@ export function login(uname, pwd) {
 
 export function logout() {
     return request({
-        url: '/admin/logout',
+        url: '/logout',
         method: 'get'
     })
 }

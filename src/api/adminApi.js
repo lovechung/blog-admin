@@ -2,7 +2,7 @@ import request from '../utils/request'
 
 export function getAdminList(params) {
     return request({
-        url: '/user/admin/list',
+        url: '/user/list',
         method: 'get',
         params: params
     })
@@ -10,14 +10,14 @@ export function getAdminList(params) {
 
 export function getAdminInfo(id) {
     return request({
-        url: '/user/admin/' + id,
+        url: '/user/' + id,
         method: 'get'
     })
 }
 
 export function saveAdmin(data) {
     return request({
-        url: '/user/admin',
+        url: '/user',
         method: 'post',
         data: data
     })
@@ -25,7 +25,7 @@ export function saveAdmin(data) {
 
 export function updateAdmin(data) {
     return request({
-        url: '/user/admin/' + data.id,
+        url: '/user/' + data.id,
         method: 'put',
         data: data
     })
@@ -33,7 +33,7 @@ export function updateAdmin(data) {
 
 export function deleteAdmin(id) {
     return request({
-        url: '/user/admin/' + id,
+        url: '/user/' + id,
         method: 'delete'
     })
 }

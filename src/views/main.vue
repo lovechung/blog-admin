@@ -1,7 +1,8 @@
 <template>
     <div id="main">
         <nav-bar :show="true"/>
-        <side-bar :show="sidebar.opened && !sidebar.hidden"/>
+<!--        <side-bar :show="sidebar.opened && !sidebar.hidden"/>-->
+        <side-bar :show="true"/>
         <section class="app-main" :style="[hiddenSidebarStyle]">
             <div class="container is-fluid is-marginless app-content">
                 <level-bar/>
