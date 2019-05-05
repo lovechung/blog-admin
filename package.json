@@ -6,7 +6,8 @@
   "scripts": {
     "dev": "parcel index.html",
     "build": "parcel build index.html --no-minify --public-url /",
-    "clean": "rimraf -rf .cache dist"
+    "clean": "rimraf -rf .cache dist",
+    "test": "script/test.sh"
   },
   "dependencies": {
     "animate.css": "^3.7.0",
